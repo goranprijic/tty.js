@@ -13,6 +13,7 @@
 
     <script type="application/javascript">
         window.io_resource = "{{ url_prefix }}/socket.io";
+        if (module) delete module; // needed for running terminal inside electron
     </script>
 
     <script src="{{ static_url }}/build/app.js"></script>

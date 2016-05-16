@@ -4,7 +4,10 @@
   "author": "Christopher Jeffrey",
   "version": "0.2.15",
   "license": "MIT",
-  "main": "./index.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
   "bin": "./bin/tty.js",
   "man": "./man/tty.js.1",
   "preferGlobal": false,
@@ -37,9 +40,10 @@
     "nib": "^1.1.0",
     "nunjucks": "0.1.9",
     "optimist": "~0.6.0",
-    "pty.js": ">= 0.2.13",
+    "pty.js": ">= 0.3.0",
     "socket.io": "0.9.16",
-    "term.js": "git://github.com/goranprijic/term.js"
+    "term.js": "git://github.com/goranprijic/term.js",
+    "electron-prebuilt": "^1.0.1"
   },
   "engines": {
     "node": ">= 0.8.0"
